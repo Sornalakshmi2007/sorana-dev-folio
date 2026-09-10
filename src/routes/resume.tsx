@@ -71,6 +71,15 @@ function Resume() {
             </div>
           </header>
 
+          <ResumeSection title="Personal Details">
+            <ul className="grid gap-1 text-sm text-muted-foreground sm:grid-cols-2">
+              <li><span className="font-semibold text-foreground">Location:</span> Chennai</li>
+              <li><span className="font-semibold text-foreground">Date of Birth:</span> April 14, 2007</li>
+              <li><span className="font-semibold text-foreground">Gender:</span> Female</li>
+              <li><span className="font-semibold text-foreground">Languages:</span> English</li>
+            </ul>
+          </ResumeSection>
+
           <ResumeSection title="Objective">
             <p className="text-sm leading-relaxed text-muted-foreground">
               Computer Science and Engineering student learning Full Stack Web
@@ -81,16 +90,38 @@ function Resume() {
           </ResumeSection>
 
           <ResumeSection title="Education">
-            <div>
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="font-bold">
-                  B.E. — Computer Science and Engineering
-                </h3>
-                <span className="text-sm font-medium text-primary">3rd Year</span>
+            <div className="space-y-4">
+              <div>
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h3 className="font-bold">
+                    B.E. — Computer Science and Engineering
+                  </h3>
+                  <span className="text-sm font-medium text-primary">
+                    3rd Year · CGPA 7.93
+                  </span>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  University College of Engineering Arni, Arni
+                </p>
               </div>
-              <p className="text-sm text-muted-foreground">
-                University College of Engineering Arni
-              </p>
+              <div>
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h3 className="font-bold">Class XII — National Open School</h3>
+                  <span className="text-sm font-medium text-primary">
+                    2024 · 83.67%
+                  </span>
+                </div>
+                <p className="text-sm text-muted-foreground">Medium: English</p>
+              </div>
+              <div>
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h3 className="font-bold">Class X — National Open School</h3>
+                  <span className="text-sm font-medium text-primary">
+                    2022 · 75.8%
+                  </span>
+                </div>
+                <p className="text-sm text-muted-foreground">Medium: English</p>
+              </div>
             </div>
           </ResumeSection>
 
@@ -130,6 +161,13 @@ function Resume() {
                   Built with HTML, CSS and JavaScript.
                 </p>
               </li>
+            </ul>
+          </ResumeSection>
+
+          <ResumeSection title="Achievements">
+            <ul className="list-disc space-y-1.5 pl-5 text-sm text-muted-foreground">
+              <li>Received scholarship for B.E. / B.Tech studies.</li>
+              <li>Ranked in the top 3 of the class in school.</li>
             </ul>
           </ResumeSection>
         </article>
